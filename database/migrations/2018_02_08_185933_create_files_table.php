@@ -17,7 +17,7 @@ class CreateFilesTable extends Migration
             $table->increments('id');
             $table->string('file');
             $table->integer('article_id')->unsigned()->nullable();
-            $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');
+           // $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');
             $table->timestamps();
             $table->softDeletes();
         });
