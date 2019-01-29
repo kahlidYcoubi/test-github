@@ -78,7 +78,8 @@ class HomeController extends BaseController
             $request['image']=$imagename;
           
         }
-         $item->update($request->all());
+		$item->update($request->all());
+		 $user->update($request->all());
         Session::flash("msg", "i:تمت عملية الحفظ بنجاح");
         return redirect("/account");
     }

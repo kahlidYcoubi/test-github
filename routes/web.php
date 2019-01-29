@@ -13,6 +13,8 @@
     Route::get('/', function () {
     return view('welcome');
 });
+    Route::get('/guzzele','GuzzelExampleController@index');
+
 Route::get('/noaccses', function () {
     return view('welcome');
 });
